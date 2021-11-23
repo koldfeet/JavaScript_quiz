@@ -90,94 +90,124 @@ var submitButton = document.getElementById('submit');
 //question start
 var myQuestions = [
 	{
-		question: "(1) What is 10/2?",
+		question: "Question(1): Who created JavaScript?",
 		answers: {
-			A: '3',
-			B: '5',
-			C: '115'
+			A: 'Douglas Crockford',
+			B: 'John Resig',
+			C: 'Steve Job',
+			D: 'Brendan Eich'
 		},
-		correctAnswer: 'B'
+		correctAnswer: 'D'
 	},
 	{
-		question: "(2) What is 30/3?",
+		question: "Question(2): When was JavaScript created?",
 		answers: {
-			A: '3',
-			B: '5',
-			C: '10'
+			A: '1984',
+			B: '2001',
+			C: '1995',
+			D: '1967'
 		},
 		correctAnswer: 'C'
 	},
     {
-		question: "(3) What is a cat?",
+		question: "Question(3): Which were code names of JavaScript, before its final name?",
 		answers: {
-			A: '3',
-			B: '5',
-			C: '10'
+			A: 'ECMAScript',
+			B: 'LiveScript',
+			C: 'Mocha',
+			D: 'CoffeeScript',
 		},
 		correctAnswer: 'C'
 	},
     {
-		question: "(4) What is 30/3?",
+		question: "Question(4): What was JavaScript first public implementation called?",
 		answers: {
-			A: '3',
-			B: '5',
-			C: '10'
+			A: 'LiveScript',
+			B: 'Mocha',
+			C: 'ECMAScript',
+			D: 'AppScript'
+		},
+		correctAnswer: 'A'
+	},
+    {
+		question: "Question(5): Is JavaScript a case-sensitive language?",
+		answers: {
+			A: 'Maybe',
+			B: 'False',
+			C: 'True',
+			D: "B and C"
 		},
 		correctAnswer: 'C'
 	},
     {
-		question: "(5) What is 30/3?",
+		question: "Question(6): Which built-in method sorts the elements of an array?",
 		answers: {
-			A: '3',
-			B: '5',
-			C: '10'
+			A: 'sort()',
+			B: 'order()',
+			C: 'changeOrder(order)',
+			D: 'None of the above.'
+		},
+		correctAnswer: 'A'
+	},
+    {
+		question: "Question(7): JavaScript is a ___ -side programming language.",
+		answers: {
+			A: 'Server',
+			B: 'Client',
+			C: 'A and B',
+			D: 'None'
 		},
 		correctAnswer: 'C'
 	},
     {
-		question: "(6) What is 30/3?",
+		question: "Question(8): Which of the following will write the message “Hello DataFlair!” in an alert box?",
 		answers: {
-			A: '3',
-			B: '5',
-			C: '10'
+			A: 'alertBox(“Hello DataFlair!”);',
+			B: 'alert(Hello DataFlair!);',
+			C: 'msgAlert(“Hello DataFlair!”);',
+			D: 'alert(“Hello DataFlair!”);'
+		},
+		correctAnswer: 'D'
+	},
+    {
+		question: "Question(9): How do you find the minimum of x and y using JavaScript?",
+		answers: {
+			A: 'Math.min(x,y)',
+			B: 'min(x,y);',
+			C: 'min(xy);',
+			D: 'Math.min(xy)'
+		},
+		correctAnswer: 'A'
+	},
+    {
+		question: "Question(10): Javascript is _ language?",
+		answers: {
+			A: 'Dynamic computer programming language',
+			B: 'Javascript is an object-oriented programming language',
+			C: 'Javascript is a Scripting language',
+			D: 'All the Above',
+		},
+		correctAnswer: 'D'
+	},
+	{
+		question: "Question(11): What is the difference between '==' and '==='?",
+		answers: {
+			A: 'Both B & C',
+			B: 'Both operators are same',
+			C: '"==" checks only for equality in value whereas "===" is a stricter equality test',
+			D: 'None of the above'
 		},
 		correctAnswer: 'C'
 	},
-    {
-		question: "(7) What is 30/3?",
+	{
+		question: "Question(12): JavaScript is ________ language?",
 		answers: {
-			A: '3',
-			B: '5',
-			C: '10'
+			A: 'an interpreted',
+			B: 'a compiled',
+			C: 'Translated',
+			D: 'None of the above'
 		},
-		correctAnswer: 'C'
-	},
-    {
-		question: "(8) What is 30/3?",
-		answers: {
-			A: '3',
-			B: '5',
-			C: '10'
-		},
-		correctAnswer: 'C'
-	},
-    {
-		question: "(9) What is 30/3?",
-		answers: {
-			A: '3',
-			B: '5',
-			C: '10'
-		},
-		correctAnswer: 'C'
-	},
-    {
-		question: "(10) What is 30/3?",
-		answers: {
-			A: '3',
-			B: '5',
-			C: '10'
-		},
-		correctAnswer: 'C'
+		correctAnswer: 'A'
 	},
 ];
 //question end
