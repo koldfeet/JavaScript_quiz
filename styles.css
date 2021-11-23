@@ -30,17 +30,28 @@ body{
 
 /* quiz container start */
 
-.container {
-    width: 800px;
-    max-width: 60%;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.FixedHeightContainer
+{
+    padding: 15px;
+    width: 30%;
+    height: 80%;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    
+}
+
+/*SCROLLBAR MODIFICATIONS*/
+
+.FixedHeightContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.FixedHeightContainer::-webkit-scrollbar-thumb {
+    background: #909090;
+}
+.FixedHeightContainer::-webkit-scrollbar-track {
+    background: #FFFFFF;
 }
 
 .question {
@@ -55,7 +66,9 @@ body{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    
+    justify-content: center;
 }
 
 /* quiz container end */
+
+

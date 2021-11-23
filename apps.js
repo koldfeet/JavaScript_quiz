@@ -90,7 +90,7 @@ var submitButton = document.getElementById('submit');
 //question start
 var myQuestions = [
 	{
-		question: "What is 10/2?",
+		question: "(1) What is 10/2?",
 		answers: {
 			A: '3',
 			B: '5',
@@ -99,14 +99,86 @@ var myQuestions = [
 		correctAnswer: 'B'
 	},
 	{
-		question: "What is 30/3?",
+		question: "(2) What is 30/3?",
 		answers: {
 			A: '3',
 			B: '5',
 			C: '10'
 		},
 		correctAnswer: 'C'
-	}
+	},
+    {
+		question: "(3) What is a cat?",
+		answers: {
+			A: '3',
+			B: '5',
+			C: '10'
+		},
+		correctAnswer: 'C'
+	},
+    {
+		question: "(4) What is 30/3?",
+		answers: {
+			A: '3',
+			B: '5',
+			C: '10'
+		},
+		correctAnswer: 'C'
+	},
+    {
+		question: "(5) What is 30/3?",
+		answers: {
+			A: '3',
+			B: '5',
+			C: '10'
+		},
+		correctAnswer: 'C'
+	},
+    {
+		question: "(6) What is 30/3?",
+		answers: {
+			A: '3',
+			B: '5',
+			C: '10'
+		},
+		correctAnswer: 'C'
+	},
+    {
+		question: "(7) What is 30/3?",
+		answers: {
+			A: '3',
+			B: '5',
+			C: '10'
+		},
+		correctAnswer: 'C'
+	},
+    {
+		question: "(8) What is 30/3?",
+		answers: {
+			A: '3',
+			B: '5',
+			C: '10'
+		},
+		correctAnswer: 'C'
+	},
+    {
+		question: "(9) What is 30/3?",
+		answers: {
+			A: '3',
+			B: '5',
+			C: '10'
+		},
+		correctAnswer: 'C'
+	},
+    {
+		question: "(10) What is 30/3?",
+		answers: {
+			A: '3',
+			B: '5',
+			C: '10'
+		},
+		correctAnswer: 'C'
+	},
 ];
 //question end
 
