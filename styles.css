@@ -109,6 +109,7 @@ width: 90%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    padding-left: 30%;
 }
 
 .center-btn {
@@ -116,6 +117,10 @@ width: 90%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#results {
+    font-size: 20px;
 }
 
 /* quiz container end */
