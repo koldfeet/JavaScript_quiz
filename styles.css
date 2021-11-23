@@ -1,7 +1,11 @@
 body{
-	font-size: 20px;
-	font-family: sans-serif;
-	color: #333;
+	padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 .question{
 	font-weight: 600;
@@ -23,3 +27,39 @@ body{
 #submit:hover{
 	background-color: #3a8;
 }
+
+/* quiz container start */
+
+.container {
+    width: 800px;
+    max-width: 60%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    
+}
+
+.answers {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+/* quiz container end */

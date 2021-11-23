@@ -19,7 +19,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 answers.push(
                     '<label>'
                         // @ts-ignore
-                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
+                        + '<input class="radio-inline" type="radio" name="question'+i+'" value="'+letter+'">'
                         // @ts-ignore
                         + letter + ': '
                         // @ts-ignore
@@ -79,18 +79,18 @@ var myQuestions = [
 	{
 		question: "What is 10/2?",
 		answers: {
-			a: '3',
-			b: '5',
-			c: '115'
+			A: '3',
+			B: '5',
+			C: '115'
 		},
 		correctAnswer: 'b'
 	},
 	{
 		question: "What is 30/3?",
 		answers: {
-			a: '3',
-			b: '5',
-			c: '10'
+			A: '3',
+			B: '5',
+			C: '10'
 		},
 		correctAnswer: 'c'
 	}
