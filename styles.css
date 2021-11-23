@@ -13,6 +13,7 @@ body{
 .answers {
     margin-bottom: 20px;
 }
+
 #submit{
 	font-family: sans-serif;
 	font-size: 20px;
@@ -28,13 +29,45 @@ body{
 	background-color: #3a8;
 }
 
+/* page header start */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    background-color: lightblue;
+    margin-bottom: 1em;
+    padding-top: 75px;
+    
+}
+
+/* page header end*/
+
+/* between header and quiz containter start*/
+.center-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* between header and quiz containter end*/
+
 /* quiz container start */
+.main-body {
+width: 90%;
+}
+
+.quiz-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .FixedHeightContainer
 {
     padding: 15px;
-    width: 30%;
-    height: 80%;
+    width: 50%;
+    height: 600px;
     overflow: scroll;
     border: 1px solid #ccc;
     overflow-y: scroll;
@@ -66,9 +99,22 @@ body{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+}
+
+.center-btn {
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* quiz container end */
 
-
+/* webpage footer section start */
+.webpage-footer {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+/* webpage footer section end */
