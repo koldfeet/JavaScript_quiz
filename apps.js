@@ -19,7 +19,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 answers.push(
                     '<label>'
                         // @ts-ignore
-                        + '<input class="radio-inline" type="radio" name="question'+i+'" value="'+letter+'">'
+                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
                         // @ts-ignore
                         + letter + ': '
                         // @ts-ignore
@@ -39,8 +39,6 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         quizContainer.innerHTML = output.join('');
     }
 
-
-	// @ts-ignore
 	function showResults(questions, quizContainer, resultsContainer){
 	
         // gather answer containers from our quiz
@@ -50,31 +48,46 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         var userAnswer = '';
         var numCorrect = 0;
         
+        // for each question...
         for(var i=0; i<questions.length; i++){
     
+            // find selected answer
             userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
             
+            // if answer is correct
             if(userAnswer===questions[i].correctAnswer){
+                // add to the number of correct answers
                 numCorrect++;
                 
+                // color the answers green
                 answerContainers[i].style.color = 'lightgreen';
             }
+            // if answer is wrong or blank
             else{
+                // color the answers red
                 answerContainers[i].style.color = 'red';
             }
         }
     
+        // show number of correct answers out of total
         resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
     }
 
+	// show the questions
 	showQuestions(questions, quizContainer);
 
+	// when user clicks submit, show results
 	submitButton.onclick = function(){
 		showResults(questions, quizContainer, resultsContainer);
 	}
 }
 
-//quiz question start
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
+
+
+//question start
 var myQuestions = [
 	{
 		question: "What is 10/2?",
@@ -83,7 +96,7 @@ var myQuestions = [
 			B: '5',
 			C: '115'
 		},
-		correctAnswer: 'b'
+		correctAnswer: 'B'
 	},
 	{
 		question: "What is 30/3?",
@@ -92,19 +105,9 @@ var myQuestions = [
 			B: '5',
 			C: '10'
 		},
-		correctAnswer: 'c'
+		correctAnswer: 'C'
 	}
 ];
-//quiz question end
-
-var quizContainer = document.getElementById('quiz');
-var resultsContainer = document.getElementById('results');
-var submitButton = document.getElementById('submit');
-
-// on submit, show results
-submitButton.onclick = function(){
-	// @ts-ignore
-	showResults(questions, quizContainer, resultsContainer);
-}
+//question end
 
 generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
