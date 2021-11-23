@@ -212,4 +212,5 @@ var myQuestions = [
 ];
 //question end
 
+//call all functions. without this it won't work
 generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
