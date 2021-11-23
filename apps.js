@@ -113,6 +113,7 @@ var submitButton = document.getElementById('submit');
 
 // on submit, show results
 submitButton.onclick = function(){
+	// @ts-ignore
 	showResults(questions, quizContainer, resultsContainer);
 }
 
