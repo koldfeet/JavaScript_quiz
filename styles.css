@@ -92,7 +92,7 @@ width: 90%;
     box-shadow: 0 0 10px 2px;
 }
 
-/*SCROLLBAR MODIFICATIONS*/
+/*SCROLLBAR MODIFICATIONS start*/
 
 .FixedHeightContainer::-webkit-scrollbar {
     width: 8px;
@@ -104,6 +104,7 @@ width: 90%;
 .FixedHeightContainer::-webkit-scrollbar-track {
     background: #FFFFFF;
 }
+/*SCROLLBAR MODIFICATIONS end*/
 
 .question {
     font-size: larger;
